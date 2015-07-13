@@ -1,0 +1,6 @@
+name: PluginName
+main : com.samistine.plugin.Main
+version: 1
+description: Add Description Here
+author: Samistine
+prefix: Add Prefix if used Here
