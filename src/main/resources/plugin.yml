@@ -1,6 +1,6 @@
-name: PluginName
+name: ${project.name}
 main : com.samistine.plugin.Main
-version: 1
+version: ${project.version}
 description: Add Description Here
 author: Samistine
 prefix: Add Prefix if used Here

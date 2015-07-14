@@ -4,7 +4,13 @@
     <groupId>com.samistine.plugin</groupId>
     <artifactId>SimplePlugin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <build>
+    <build>         
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
