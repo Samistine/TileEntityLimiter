@@ -17,22 +17,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin implements Listener{
     @Override
     public void onEnable() {
-        // TODO Insert logic to be performed when the plugin is enabled
-		getLogger().info("onEnable has been invoked!");
-		Bukkit.getPluginManager().registerEvents(this, this);
-    }
- 
-    @Override
-    public void onDisable() {
-        // TODO Insert logic to be performed when the plugin is disabled
-		getLogger().info("onDisable has been invoked!");
+	Bukkit.getPluginManager().registerEvents(this, this);
     }
     
     @EventHandler
-    public void onpre(AsyncPlayerChatEvent e) {
+    public void onChunkLoad(AsyncPlayerChatEvent e) {
     	if (e.getMessage().equalsIgnoreCase("WTF")) {
     		String newMsg = e.getMessage().replace("WTF", "Well Thats Fantastic");
     		e.setMessage(newMsg);
     	}
     }
+   
 }
