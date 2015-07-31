@@ -1,6 +1,5 @@
 name: ${project.name}
-main : com.samistine.plugin.Main
+main : com.samistine.TileEntityLimiter.Main
 version: ${project.version}
-description: Add Description Here
+description: Allow customization of the max entities allowed per chunk
 author: Samistine
-prefix: Add Prefix if used Here
